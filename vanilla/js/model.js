@@ -15,7 +15,7 @@ var FilterModel = Clazz.create({
   },
 
   _search: function(query) {
-    return [ "Do some stuff here with: "+query ];
+    return [ "Search result: " + query ];
   },
 
   on: function(event, callback) {
