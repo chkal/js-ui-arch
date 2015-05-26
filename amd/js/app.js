@@ -1,10 +1,10 @@
 $(function(){
   "use strict";
 
-  requirejs([ "js/model", "js/view" ], function(createFilterModel, createFilterView){  
+  requirejs([ "js/model", "js/view" ], function(FilterModel, FilterView){
 
-    var myModel = createFilterModel();
-    var myView = createFilterView(myModel);
+    var myModel = FilterModel.create();
+    var myView = FilterView.create(myModel);
     myView.render();
 
     /* Optional routing stuff */
